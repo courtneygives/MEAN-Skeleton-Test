@@ -5,13 +5,15 @@ var path = require('path');
 
 mongoose.connect('mongodb://localhost/mean-skeleton-test');
 
+var dog = mongoose.model('dog', {name:String});
+
 router.get('/', function(request, response){
   console.log('Router test');
-  response.sendFile(path.join(__dirname, '../views/index.html'));
+  response.sendFile(path.join(__dirname, '../public/views/index.html'));
 console.log('Here is a console log');
 });
 
-var dog = mongoose.model('dog', {name:String});
+
 
 router.post('/add', function(request, response, next){
   var puppy= new dog({name: request.body.name});

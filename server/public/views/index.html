@@ -1,7 +1,7 @@
-<!DOCTYPE html ng-app="app">
-<html>
-<script src="/vendor/angular/angular.min.js" type="text/javascript"></script>
-<script src="/assets/scripts/app.min.js"  type="text/javascript">
+<!DOCTYPE html>
+<html ng-app="app">
+<script src="/vendor/angular/angular.min.js" ></script>
+<script src="/assets/scripts/client.min.js">
 
 </script>
 <head lang="en">
@@ -12,7 +12,7 @@
   <h1>MEAN STACK APP</h1>
   Seitan vinyl tattooed, marfa ethical +1 umami chartreuse everyday carry selfies paleo VHS. Mixtape farm-to-table waistcoat, +1 mustache direct trade typewriter vegan put a bird on it.
   <div class="names-form">
-    <p ng-show="dog.name">Worst dog name: {{ dog.name }}</p>
+    <p ng-show="dog.name">Worst dog name: {{dog.name}}</p>
     <p ng-hide="dog.name">Enter the worst name you can think of for a dog</p>
     <form novalidate>
         Name: <input type="text" ng-model="dog.name" /><br />
@@ -20,7 +20,7 @@
     </form>
 
     <ul>
-        <li ng-repeat="dog in dogs">{{ dog.name }}</li>
+        <li ng-repeat="dog in dogs">{{dog.name}}</li>
     </ul>
   </div>
 </body>
