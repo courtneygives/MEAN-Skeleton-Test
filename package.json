@@ -1,0 +1,28 @@
+{
+  "name": "mean-skeleton-test",
+  "version": "1.0.0",
+  "description": "![MEAN Diagram](images/mean-diagram-3.png) ### Let's spin up a new project!",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/courtneygives/MEAN-Skeleton-Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/courtneygives/MEAN-Skeleton-Test/issues"
+  },
+  "homepage": "https://github.com/courtneygives/MEAN-Skeleton-Test#readme",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "express": "^4.13.4",
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "mongoose": "^4.4.12"
+  }
+}

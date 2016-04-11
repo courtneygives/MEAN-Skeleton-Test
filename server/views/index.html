@@ -1,0 +1,27 @@
+<!DOCTYPE html ng-app="app">
+<html>
+<script src="/vendor/angular/angular.min.js" type="text/javascript"></script>
+<script src="/assets/scripts/app.min.js"  type="text/javascript">
+
+</script>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Worst Dog Names</title>
+</head>
+<body ng-controller="DogControl">
+  <h1>MEAN STACK APP</h1>
+  Seitan vinyl tattooed, marfa ethical +1 umami chartreuse everyday carry selfies paleo VHS. Mixtape farm-to-table waistcoat, +1 mustache direct trade typewriter vegan put a bird on it.
+  <div class="names-form">
+    <p ng-show="dog.name">Worst dog name: {{ dog.name }}</p>
+    <p ng-hide="dog.name">Enter the worst name you can think of for a dog</p>
+    <form novalidate>
+        Name: <input type="text" ng-model="dog.name" /><br />
+        <input type="submit" ng-click="add(dog)" value="Save"/>
+    </form>
+
+    <ul>
+        <li ng-repeat="dog in dogs">{{ dog.name }}</li>
+    </ul>
+  </div>
+</body>
+</html>
